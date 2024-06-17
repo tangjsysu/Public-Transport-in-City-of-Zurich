@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>GEO 454 GROUP 10</title>
+<!--
+
+DIGITAL TREND
+
+https://templatemo.com/tm-538-digital-trend
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	 <link rel="stylesheet" href="css/cube.css">
+	 <link rel="stylesheet" href="css/flip.css">
+	 <link rel="stylesheet" href="css/cube2.css">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	 <link href="https://fonts.font.im/css?family=Monoton" rel="stylesheet">
+
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-digital-trend.css">
+	 <style>
+	  .image-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	  }
+	  .image-container img {
+		width: 200px;
+		height: auto; 
+		margin: 10px;
+	  }
+	     /* button */
+	  .switch {
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+		z-index: 999; 
+	  }
+
+	  .switch input {
+		opacity: 0;
+		width: 0;
+		height: 0;
+	  }
+
+	  .slider {
+		position: relative; 
+		cursor: pointer;
+		display: inline-block;
+		width: 60px;
+		height: 34px;
+		background-color: #ccc;
+		border-radius: 34px;
+		transition: background-color 0.4s;
+	  }
+
+	  .slider:before {
+		position: absolute;
+		content: "";
+		height: 26px;
+		width: 26px;
+		left: 4px;
+		bottom: 4px;
+		background-color: white;
+		border-radius: 50%;
+		transition: transform 0.4s;
+	  }
+
+	  input:checked + .slider {
+		background-color: #2196F3;
+	  }
+
+	  input:focus + .slider {
+		box-shadow: 0 0 1px #2196F3;
+	  }
+
+	  input:checked + .slider:before {
+		transform: translateX(26px);
+	  }
+	  
+	  #findings {
+    padding: 20px;
+	}
+
+	.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	}
+
+	.image-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+	}
+
+	.image-wrapper img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+	}
+
+	.image-wrapper p {
+    margin-top: 10px;
+    font-weight: bold;
+	} 
+	</style>
+
+</head>
+<body>
+
+     <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <i class="fa fa-line-chart"></i>
+              Public Transport in City of Zurich
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#background" class="nav-link smoothScroll">BACKGROUND</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#researchquestion" class="nav-link smoothScroll">RESEARCH QUESTIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#map" class="nav-link">MAP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#findings" class="nav-link">FINDINGS</a>
+                    </li>
+					<li class="nav-item">
+                        <a href="#data" class="nav-link">DATA&METHODS</a>
+                    </li>
+					<li class="nav-item">
+                        <a href="#about" class="nav-link">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+     <!-- HERO -->
+     <section class="hero hero-bg d-flex justify-content-center align-items-center">
+               <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                              <div class="hero-text">
+
+                                   <h1 class="text-white" data-aos="fade-up">Public Transport in City of Zurich</h1>
+
+                                   <a href="#background" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Let us explore together!</a>
+                              </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                          <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+
+                            <?xml version="1.0" encoding="utf-8"?>
+<svg width="500px" height="500px" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet"><path fill="none" stroke="#607d8b" stroke-width="3" stroke-miterlimit="10" d="M4 5.5h120"></path><path fill="#607d8b" d="M40.73 30.32h13.81v3.99H40.73z"></path><path d="M59.63 31.48h-24c-1 0-1.81-.81-1.81-1.81v-.17c0-1 .81-1.81 1.81-1.81h24c1 0 1.81.81 1.81 1.81v.17c0 1-.81 1.81-1.81 1.81z" fill="#82aec0"></path><path d="M48.87 29.37l11.06-10.61c.42-.41.43-1.09.02-1.51L46.62 5.65" fill="none" stroke="#82aec0" stroke-width="3" stroke-miterlimit="10"></path><path fill="#607d8b" d="M45.65 6.79l4.73 4.15l2.2-2.05l-4.98-4.34z"></path><path fill="#82aec0" d="M57.06 15.62v4.57l2.22-2.29z"></path><path d="M46.39 29.37L35.33 18.76c-.42-.41-.43-1.09-.02-1.51l13.33-11.6" fill="none" stroke="#82aec0" stroke-width="3" stroke-miterlimit="10"></path><path fill="#607d8b" d="M49.62 6.79l-4.73 4.15l-2.2-2.05l4.97-4.34z"></path><path fill="#82aec0" d="M38.2 15.62v4.57l-2.21-2.29z"></path><path d="M50.12 8.71h-4.97c-.61 0-1.1-.49-1.1-1.1V3.69c0-.61.49-1.1 1.1-1.1h4.97c.61 0 1.1.49 1.1 1.1v3.92c-.01.6-.5 1.1-1.1 1.1z" fill="#82aec0"></path><circle cx="37.39" cy="115.03" r="8.97" fill="#455a64"></circle><path d="M39.58 116.4c-.52.64-1.3 1.07-2.2 1.07c-.89 0-1.68-.42-2.2-1.07H31.6c.62 2.63 2.96 4.59 5.78 4.59c2.82 0 5.16-1.96 5.78-4.59h-3.58z" fill="#607d8b"></path><circle cx="90.61" cy="115.03" r="8.97" fill="#455a64"></circle><path d="M92.81 116.4c-.52.64-1.3 1.07-2.2 1.07c-.89 0-1.68-.42-2.2-1.07h-3.58c.62 2.63 2.96 4.59 5.78 4.59c2.82 0 5.16-1.96 5.78-4.59h-3.58z" fill="#607d8b"></path><path fill="#455a64" d="M78.13 119.53H50.3l-3.56-7.67h34.52z"></path><path fill="#eee" d="M6.32 48.36v26.22h115.36V48.95z"></path><path d="M7 45.62c-.43 1.27-.68 2.81-.68 4.68h115.36c0-1.79-.25-3.41-.68-4.68H7z" fill="#9e9e9e"></path><path d="M6.64 46.88h114.72c-1.27-5.61-6.27-12.8-12.26-12.8H18.9c-5.99 0-10.99 7.2-12.26 12.8z" fill="#bdbdbd"></path><path fill=var(--tram-color) d="M124 108.84l-2.32-5.88V70.43H6.32v32.53L4 108.84z"></path><path fill="#82aec0" d="M4 108.84h120v5.36H4z"></path><path fill="#bae2fd" d="M23.39 65.84h14.6V81.4h-14.6z"></path><path d="M36.98 82.4H24.39a2 2 0 0 1-2-2V66.84a2 2 0 0 1 2-2h12.6a2 2 0 0 1 2 2v13.55c0 1.11-.9 2.01-2.01 2.01zM23.89 67.65v11.93c0 .45.36.81.81.81h11.98c.45 0 .81-.36.81-.81V67.65c0-.45-.36-.81-.81-.81H24.7c-.45 0-.81.36-.81.81z" fill="#37474f"></path><path fill="none" stroke="#37474f" stroke-miterlimit="10" d="M22.89 70.8h15.23"></path><path fill="#bae2fd" d="M90.01 65.84h14.6V81.4h-14.6z"></path><path d="M103.61 82.4H91.02a2 2 0 0 1-2-2V66.84a2 2 0 0 1 2-2h12.6a2 2 0 0 1 2 2v13.55c-.01 1.11-.9 2.01-2.01 2.01zM90.52 67.65v11.93c0 .45.36.81.81.81h11.98c.45 0 .81-.36.81-.81V67.65c0-.45-.36-.81-.81-.81H91.33c-.45 0-.81.36-.81.81z" fill="#37474f"></path><path fill="none" stroke="#37474f" stroke-miterlimit="10" d="M89.51 70.8h15.24"></path><path d="M47.86 107.86c-1.61 0-2.92-1.4-2.92-3.13V65.5c0-2.02 1.53-3.66 3.42-3.66h32.12c1.42 0 2.57 1.24 2.57 2.76v40.5c0 1.52-1.15 2.76-2.57 2.76H47.86z" fill=var(--tram-color)></path><path d="M80.49 62.84c.86 0 1.57.79 1.57 1.76v40.5c0 .97-.7 1.76-1.57 1.76H47.86c-1.06 0-1.92-.96-1.92-2.13V65.5c0-1.47 1.08-2.66 2.42-2.66h32.13m0-2H48.36c-2.44 0-4.42 2.09-4.42 4.66v39.23c0 2.28 1.75 4.13 3.92 4.13h32.62c1.97 0 3.57-1.68 3.57-3.76V64.6c0-2.08-1.59-3.76-3.56-3.76z" fill=var(--tram-boundary)></path><path d="M77.12 64.84h-7.49c-1.47 0-2.66 1.19-2.66 2.66v17.59c0 1.47 1.19 2.66 2.66 2.66h7.49c1.47 0 2.66-1.19 2.66-2.66V67.5c0-1.47-1.19-2.66-2.66-2.66z" fill="#37474f"></path><path d="M76.57 67.16H70.4c-1.1 0-2 .9-2 2v14.21c0 1.1.9 2 2 2h6.17c1.1 0 2-.9 2-2V69.16a2 2 0 0 0-2-2z" fill="#bae2fd"></path><path d="M58.24 64.84h-7.49c-1.47 0-2.66 1.19-2.66 2.66v17.59c0 1.47 1.19 2.66 2.66 2.66h7.49c1.47 0 2.66-1.19 2.66-2.66V67.5a2.672 2.672 0 0 0-2.66-2.66z" fill="#37474f"></path><path d="M57.69 67.16h-6.17c-1.1 0-2 .9-2 2v14.21c0 1.1.9 2 2 2h6.17c1.1 0 2-.9 2-2V69.16c0-1.1-.9-2-2-2z" fill="#bae2fd"></path><path fill="none" stroke=var(--tram-boundary) stroke-width="2" stroke-miterlimit="10" d="M64 61.8v45.6"></path><path fill="#bae2fd" d="M6.32 65.84h10.25V86.4H6.32z"></path><path d="M14.51 85.39c.73 0 1.33-.6 1.33-1.33V68.17c0-.73-.6-1.33-1.33-1.33H6.33v-2h9.11a2 2 0 0 1 2 2v18.55a2 2 0 0 1-2 2H6.32v-2h8.19z" fill="#37474f"></path><path fill="#bae2fd" d="M111.57 65.84h10.11V86.4h-10.11z"></path><path d="M113.49 85.39c-.73 0-1.33-.6-1.33-1.33V68.17c0-.73.6-1.33 1.33-1.33h8.18v-2h-9.11a2 2 0 0 0-2 2v18.55a2 2 0 0 0 2 2h9.11v-2h-8.18z" fill="#37474f"></path></svg>
+
+                        </div>
+
+                    </div>
+               </div>
+     </section>
+	 
+	 
+	<!-- BACKGROUND -->
+	<section class="about section-padding pb-0" id="background">
+		<div class="container">
+			<h2 class="mb-4" data-aos="fade-up"><strong>Background</strong></h2>
+			<p class="mb-0" data-aos="fade-up">
+				The public transport network of Zurich is one of the most efficient and reliable in the world. In addition to the railway stations, where Schweizerische Bundesbahnen (SBB) makes its services available to the public, Verkehrsbetriebe Zürich (VBZ) is responsible for local and regional transport in the city of Zurich. Alongside SBB, it is the largest provider of transport services in the Zürcher Verkehrsverbund (ZVV). VBZ is responsible for tram and bus operations in the city of Zurich and thus offers people in the city and the surrounding regions a high-quality public transport service 365 days a year, at least 20 hours a day. In 2022, VBZ transported a total of 268.5 million passengers, which corresponds to around 581.6 million passenger-kilometres.
+			</p>
+			<br>
+			<p class="mb-0" data-aos="fade-up">
+				Accessibility is an important element regarding public transportation. Having a clear overview of public transportation accessibility can be significant to both the public sectors and the citizens. Accessibility can be defined as the potential to get from one location (source location) to all other locations (destinations). Several factors play significant roles in accessibility including public transport timetable and structural data (e.g., population, education, and employment). The settlement structure, especially the distribution of population and jobs, which gives rise to spatially relevant activities and demand, is also crucial.
+			</p>
+			<br>
+			<p class="mb-0" data-aos="fade-up">
+				In contrast to accessibility, development is defined exclusively by the transport services available at a specific point (e.g., at a bus stop). The public transport quality classes, for example, are an important indicator of development by public transport, with three easy-to-define criteria forming the basis for calculation:
+			</p>
+			<br>
+		</div>
+		  <div class="wrap">
+			<div class="cube">
+				<div class="side cube-front">
+					<h2><strong>Type</strong></h2>
+					<p>The type of public transport at a stop</p>
+				</div>
+				<div class="side cube-right">
+					<h2><strong>Interval</strong></h2>
+					<p>The interval between services at a stop</p>
+				</div>
+				<div class="side cube-top">
+					<h2><strong>Distance</strong></h2>
+					<p>Distance to a stop (as the crow flies)</p>
+				</div>
+			</div>
+			<div class="cube cube2">
+				<div class="side cube-front">
+					<h2><strong>Interval</strong></h2>
+					<p>The interval between services at a stop</p>
+				</div>
+				<div class="side cube-right">
+					<h2><strong>Distance</strong></h2>
+					<p>Distance to a stop (as the crow flies)</p>
+				</div>
+				<div class="side cube-top">
+					<h2><strong>Type</strong></h2>
+					<p>The type of public transport at a stop</p>
+				</div>
+			</div>
+			<div class="cube cube3">
+				<div class="side cube-front">
+					<h2><strong>Distance</strong></h2>
+					<p>Distance to a stop (as the crow flies)</p>
+				</div>
+				<div class="side cube-right">
+					<h2><strong>Type</strong></h2>
+					<p>The type of public transport at a stop</p>
+				</div>
+				<div class="side cube-top">
+					<h2><strong>Interval</strong></h2>
+					<p>The interval between services at a stop</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- RESEARCH QUESTIONS -->
+<section class="about section-padding pb-0" id="researchquestion">
+    <div class="container">
+        <h2 class="mb-4" data-aos="fade-up"><strong>Research Questions</strong></h2>
+        <div class="research-questions-content" data-aos="fade-up" style="font-size: 1.30em; font-weight: bold;">
+            <p><mark>How convenient is it to access public transportation in different areas of the City of Zurich?</mark></p>
+            <ul style="font-size: 1.20em; font-weight: bold;">
+                <li><mark>How are the stations spatially distributed?</mark></li>
+                <li><mark>How frequent are the public transportation options (bus, train, tram)?</mark></li>
+            </ul>
+        </div>
+    </div>
+	<div class="wrap-new">
+    <div class="cube-new">
+      <div class="side-new cube-front-new">
+        <h2><strong>Q1</strong></h2>
+        <p>How convenient is it to access public transportation in different areas of the City of Zurich?</p>
+      </div>
+      <div class="side-new cube-back-new">
+        <h2><strong>Q2</strong></h2>
+        <p>How are the stations spatially distributed?</p>
+      </div>
+      <div class="side-new cube-left-new">
+        <h2><strong>Q3</strong></h2>
+        <p>How frequent are the public transportation options (bus, train, tram)?</p>
+      </div>
+      <div class="side-new cube-right-new">
+        <h2><strong>Q1</strong></h2>
+        <p>How convenient is it to access public transportation in different areas of the City of Zurich?</p>
+      </div>
+      <div class="side-new cube-top-new">
+        <h2><strong>Q2</strong></h2>
+        <p>How are the stations spatially distributed?</p>
+      </div>
+      <div class="side-new cube-bottom-new">
+        <h2><strong>Q3</strong></h2>
+        <p>How frequent are the public transportation options (bus, train, tram)?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	 
+	 <!-- UNSDGs -->
+	 <section class="about section-padding pb-0">
+	 <div class="container">
+        <h2 class="mb-4" data-aos="fade-up"><strong>Relation to UN Sustainable Development Goals</strong></h2>
+     </div>
+	 
+	 <div class="about-image" data-aos="fade-up" data-aos-delay="200">
+	    <div class="image-container">
+		 
+			<a href="https://sdgs.un.org/goals/goal3"><img src="images/project/sdg-03.gif" alt="Image 1" class="img-fluid" alt="office"></a>
+			<a href="https://sdgs.un.org/goals/goal9"><img src="images/project/sdg-09.gif" alt="Image 1" class="img-fluid" alt="office"></a>
+			<a href="https://sdgs.un.org/goals/goal11"><img src="images/project/sdg-11.gif" alt="Image 1" class="img-fluid" alt="office"></a>
+			
+		</div>
+		</div>
+		<div class="container">
+		<br>
+			<p class="mb-0" data-aos="fade-up">
+				In 2015 more than 190 countries signed two important and promising agreements: the UN 2030 Agenda for Sustainable Development and the Paris agreement on climate change. The Agenda for Sustainable Development includes 17 SDGs regarding several targets such as protecting ecosystems, pursuing sustainable cities and economies, energy, etc.
+			</p>
+			<br>
+			<p class="mb-0" data-aos="fade-up">
+				For this project we have to link transportation to the SDGs. The services and transport infrastructures in the context of economic and social benefits are well known. Transport infrastructure can be the deciding factor between being cut off from and being integrated with the global economy, as well as accessing social and economic opportunities. There is not a specific SDG in the 2030 Agenda for Sustainable Development concerning transport. Transport is highlighted as a decisive enabler in achieving the 17 SDGs. For instance, making significant global advances in reducing greenhouse gas emissions (SDG 13) is unachievable without major efforts in the energy sector (SDG 7), with transport being one of the primary energy consumers.
+				The <mark>accessibility</mark> is an important element for transportation. SDG target 9 is about the demand to improve quality, reliable, sustainable, and resilient infrastructure, and emphasizes on equitable access for all. SDG target 11 emphasizes the need of ensuring that everyone has access to safe, affordable, and sustainable transportation systems. SDG target 3 addresses the health aspect and that is a major factor as it comes to the safety of transportation and also the accessibility especially for the people in need.
+			</p>
+		</div>
+		 
+    </section>
+	 
+	<!-- MAP -->
+<section class="about section-padding pb-0" id="map">
+  <div class="container">
+    <h2 class="mb-4" data-aos="fade-up"><strong>Maps</strong></h2>
+	<div class="middle" style="height: 650px;">
+	  <div class="flip">
+		<div class="front middle">
+		  <h3 class="mb-3" ><strong>Hexagon Map</strong></h3>
+		  <p >
+			Welcome to the Zurich Public Transportation Frequency Map! This interactive tool allows you to explore transportation frequencies across the city using our 3D hexagon map. The height of each hexagon represents the cumulative public transportation frequency of stops within that hexagon. The map on this page shows daylight transportation, and feel free to switch to night-time map using the switch at the bottom right of the page.
+			</p>
+		<p >
+			<strong>Features:</strong><br>
+			<u>Weight Sliders:</u> Customize the map by changing the weight of train, tram, and bus frequencies. Moving the slider closer to 1 for a particular transportation mode increases its impact on the hexagon heights.<br>
+			<u>Radius Slider:</u> Adjust the size of the hexagons by using the radius slider.<br>
+			<u>3D/2D Toggle:</u> Switch between 3D and 2D map display modes.<br>
+			<u>Map Rotation:</u> Hold the Ctrl key and move your mouse to rotate the map.
+			</p>
+			<p >
+			Explore Zurich's public transportation accessibility and reachability at various locations, and feel free to adjust the weights of modes of transport with your own preferences!
+			</p>
+		</div>
+
+		<div class="back middle">
+		 	  <h3 class="mb-3" ><strong>Station Map</strong></h3>
+		  <p >
+			Here is the Zurich Public Transportation Stations Map! This interactive map and plot show stations within the range of the City of Zurich. The map is informative, and it displays the 461 public transportation stations as blue circle markers. The bar plot below indicates the bus frequency of each line.
+			</p>
+		<p >
+			<strong>Features:</strong><br>
+			<u>Initial Map:</u>  Adjust the map view by zooming and panning. Click on the dots to show more information about the stop. The popup displays the station name, and the frequency of tram, bus, and train stops at the station, measured in trips per hour (tph).<br>
+			<u>Select Station:</u> Use the drop-down menu to select a specific station as needed. The list of stations is in alphabetical order. The map will zoom in on the selected station, highlighted in orange.<br>
+			<u>Reset Button:</u> Return to the initial overview map view by clicking the “Reset Map View” button.<br>
+			<u>Interactive Plot:</u> Click on the orange bar of the desired bus line in the plot to filter the map and display all stations that the selected bus line stops at.
+			</p>
+			<p >
+			Explore the interactive map with the frequency plot to gain insights into the public transportation network of Zurich! This tool provides a detailed overview of the geographical distribution of bus lines, station locations, and bus frequencies, offering valuable information on public transportation accessibility.
+			</p>
+		  </div>
+		</div>
+	  </div>
+    <!-- switch -->
+    <div class="switch">
+      <label>
+        <i class="fas fa-sun"></i> <!-- Sun icon -->
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+</section>
+
+	<section class="about section-padding pb-0" id="dashboard">
+	  <div class="container">
+		<iframe frameborder="0" style="height: 750px; width: 100%;" src="https://geo454group10.shinyapps.io/maybefinaldatmap/"></iframe>
+	  </div>
+	</section>
+	 	 
+	 <!-- FINDINGS -->
+     <section class="about section-padding pb-0" id="findings">
+	 <div class="container">
+                <h2 class="mb-4" data-aos="fade-up"><strong>Findings</strong></h2>
+        <p class="mb-0" data-aos="fade-up">
+			Public transportation resources in the city are generally well-distributed.
+			<br>Tram resources are centralized around Zurich HB.
+			<br>Bus resources are evenly distributed, reaching even the edges of the city.
+			<br>For night bus, resources are centralized near train stations, and well scattered.
+		<ul class="mb-0" data-aos="fade-up" style="font-size: 1.00em; font-weight: bold;">
+            <br>
+            <li>Tram: 8 trams per hour (tram 12 & 15: 4 trams per hour)</li>
+            <li>Train: Day - once to twice every hour (S10, S4: 6 per hour), Night - once every hour</li>
+            <li>Bus: </li>
+        </ul>
+		</p>
+	</div>
+	
+	<div class="images-container">
+        <div class="image-wrapper">
+            <img src="images/day bus.png" alt="Daylight Bus">
+            <p>Figure1: Daylight Bus Frequency of the City of Zurich</p>
+        </div>
+        <div class="image-wrapper">
+            <img src="images/night bus.png" alt="Night Bus">
+            <p>Figure 2: Night Bus Frequency of the City of Zurich</p>
+        </div>
+    </div>
+	
+	
+     </section>
+	  <script>
+    const toggleSwitch = document.querySelector('#themeToggle');
+
+    toggleSwitch.addEventListener('change', function() {
+      const root = document.documentElement;
+      const dashboardSection = document.querySelector('#dashboard');
+      const iframe = dashboardSection.querySelector('iframe');
+      const findingsSection = document.querySelector('#findings');
+      const newcubeSides = document.querySelectorAll('.cube-new .side-new');
+      const cubeSides = document.querySelectorAll('.cube .side');
+      const flipElements = document.querySelectorAll('.flip .front, .flip .back');
+
+      if(this.checked) {
+        root.style.setProperty('--white-color', '#333'); 
+        root.style.setProperty('--p-color', '#ededed'); 
+        root.style.setProperty('--primary-color', '#2e2e2e');
+        root.style.setProperty('--menu-bg', '#2e2e2e');
+        root.style.setProperty('--tram-color', '#333');
+        root.style.setProperty('--tram-boundary', '#2e2e2e');
+        iframe.src = "https://geo454group10.shinyapps.io/maybefinaldatmap/";
+        findingsSection.querySelector('p').textContent = "";
+        newcubeSides.forEach(side => {
+          side.style.backgroundColor = '#444444d9';
+          side.style.borderColor = '#ffffff';
+        });
+        cubeSides.forEach(side => {
+          side.style.backgroundColor = '#444444d9';
+          side.style.borderColor = '#ffffff';
+        });
+        flipElements.forEach(el => {
+          el.style.backgroundColor = '#3b3b3b';
+        });
+      } else {
+        root.style.setProperty('--white-color', '#ffffff'); 
+        root.style.setProperty('--p-color', '#666262'); 
+        root.style.setProperty('--primary-color', '#057a8d');
+        root.style.setProperty('--menu-bg', '#0c8195');
+        root.style.setProperty('--tram-color', '#057a8d');
+        root.style.setProperty('--tram-boundary', '#0c8195');
+        iframe.src = "https://geo454group10.shinyapps.io/maybefinaldatmap/";
+        findingsSection.querySelector('p').textContent = "";
+        newcubeSides.forEach(side => {
+          side.style.backgroundColor = '#ffffffd9';
+          side.style.borderColor = '#000000';
+        });
+        cubeSides.forEach(side => {
+          side.style.backgroundColor = '#444444d9';
+          side.style.borderColor = '#ffffff';
+        });
+        flipElements.forEach(el => {
+          el.style.backgroundColor = '#fafafa';
+        });
+      }
+    });
+</script>
+
+	 <!-- DATA & METHOD-->
+     <section class="about section-padding pb-0" id="data">
+	 <div class="container">
+                <h2 class="mb-4" data-aos="fade-up"><strong>Data & Method</strong></h2>
+        <p class="mb-0" data-aos="fade-up">
+		Data:
+		
+		<ul class="mb-0" data-aos="fade-up" style="font-size: 1.00em; font-weight: bold;">
+			<br>
+			<li><mark>ZVV Timetable, Static GTFS (Retrived from <a href = "https://data.stadt-zuerich.ch/dataset/vbz_fahrplandaten_gtfs"> Open Data Zürich</a>)</mark></li>
+			<li><mark>ZVV station data (Retrived from <a href = "https://maps.zh.ch/"> GIS-Browser of Zürich</a>)</mark></li>
+		</ul>
+		</p>
+
+		<div class="images-container">
+			<div class="image-wrapper">
+				<p><br>Equation for station frequency of daytime public transportation</p>
+				<img src="images/day equation.png" alt="day equation">
+			
+			</div>
+		</div>
+		<div class="images-container">
+			<div class="image-wrapper">
+				<p>Equation for station frequency of night public transportation</p>
+				<img src="images/night equation.png" alt="night equation">
+				<p>W: weight <br> Freq: frequency</p>
+            
+        </div>
+    </div>
+	</div>
+     </section>
+
+     <!-- SOURCES -->
+     <section class="about section-padding pb-0">
+	 <div class="container">
+                <h2 class="mb-4" data-aos="fade-up"><strong>Sources</strong></h2>
+        <p class="mb-0" data-aos="fade-up">Reference:
+		<br> Vandycke, N., Viegas, J.M. (2022). From Sustainable Development Goals to Sustainable Mobility. In: Sustainable Mobility in a Fast-Changing World. Sustainable Development Goals Series. Palgrave Macmillan, Cham. https://doi.org/10.1007/978-3-031-08961-9_3
+		<br>Sources:
+		<br>https://www.stadt-zuerich.ch/vbz/de/index/die_vbz.html
+
+		<br>https://www.zuerich.com/de/besuchen/unterwegs-in-zuerich/oeffentliches-verkehrsnetz-in-zuerich
+
+		<br>https://www.zh.ch/de/mobilitaet/gesamtverkehrsplanung/verkehrsgrundlagen/verkehrsangebot.html
+
+		<br>https://www.zh.ch/content/dam/zhweb/bilder-dokumente/organisation/volkswirtschaftsdirektion/afv/publikationen-afv/KTZH_AFV_Broschuere_OeV-Gueteklassen_2_1_2020_08_25.pdf
+		<br>
+		<br>
+		</p>
+	</div>
+    </section>
+
+
+     <!-- TESTIMONIAL -->
+<section class="site-footer" id="about">
+  <div class="container">
+    <h2 class="mb-4" data-aos="fade-up"><strong>About Us</strong></h2>
+    <div class="row">
+
+      <div class="col-lg-4 col-md-4 col-12 d-flex flex-column align-items-center">
+        <div class="contact-image" data-aos="fade-up">
+          <img src="images/Jing_image.jpg" class="img-fluid rounded-circle" alt="Person 1" style="width: 180px; height: 180px;">
+        </div>
+        <div class="contact-info mt-3 text-center" >
+          <strong>Jing Tang</strong>
+          <span class="mx-1">/</span>
+		  	<p>
+              <a href="#">
+                <i class="fa fa-envelope mr-2 footer-icon"></i>
+                jing.tang@uzh.ch
+              </a>
+            </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-12 d-flex flex-column align-items-center">
+        <div class="contact-image" data-aos="fade-up">
+          <img src="images/Vijee_image.jpg" class="img-fluid rounded-circle" alt="Person 1" style="width: 180px; height: 180px;">
+        </div>
+        <div class="contact-info mt-3 text-center" >
+          <strong>Vijeepan Vairamuthu</strong>
+          <span class="mx-1">/</span>
+		  	<p>
+              <a href="#">
+                <i class="fa fa-envelope mr-2 footer-icon"></i>
+                vijeepan.vairamuthu@uzh.ch
+              </a>
+            </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-12 d-flex flex-column align-items-center">
+        <div class="contact-image" data-aos="fade-up">
+          <img src="images/Leqi_image.jpg" class="img-fluid rounded-circle" alt="Person 1" style="width: 180px; height: 180px;">
+        </div>
+        <div class="contact-info mt-3 text-center"  >
+          <strong>Leqi Wang</strong>
+          <span class="mx-1">/</span>
+		  	<p>
+              <a href="#">
+                <i class="fa fa-envelope mr-2 footer-icon"></i>
+                leqi.wang@uzh.ch
+              </a>
+            </p>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/aos.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>
