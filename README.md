@@ -12,7 +12,7 @@ The web map is constructed using:
 
 ## HTML and CSS
 
-The HTML is constructed with CSS without using any frameworks.
+The HTML is constructed with CSS and JavaScript without using any frameworks.
 
 ## Website Link
 
