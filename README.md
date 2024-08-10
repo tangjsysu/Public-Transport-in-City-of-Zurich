@@ -1,7 +1,7 @@
-# web_and_map
-# Public Transportation Accessibility Project
+# Public Transport in City of Zurich -- Public Transportation Accessibility Project
 
 This project explores public transportation accessibility by considering users' preferences for different public transportation modes.
+The webpage features different traffic conditions for daylight and nighttime. Users can toggle between these views by clicking the button in the bottom right corner of the page.
 
 ## Web Map
 
